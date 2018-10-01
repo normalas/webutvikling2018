@@ -1,4 +1,14 @@
-*{
-  box-sizing: border-box;
-  
+@media print{
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    color:#000;
+    background-color:#FFF;
+    width:100%;
+    font-family: "Times New Roman", serif;
+  }
+  a:after{
+    content:" ("attr(href)")";
+  }
 }
